@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style type="text/css">
+.main {
+  height: auto;
+  border: 1px solid #999;
+  border-bottom: none;
+  margin-bottom: 10px;
+}
+.line {
+  width: 100%;
+  display: -moz-box;  /* Firefox */
+  display: -ms-flexbox;    /* IE10 */
+  display: -webkit-box;    /* Safari */ 
+  display: -webkit-flex;    /* Chrome, WebKit */
+  display: box; 
+  display: flexbox; 
+  display: flex;
+  -webkit-justify-content:center;
+  justify-content:center;
+  -moz-box-pack:center;
+  -webkit--moz-box-pack:center;
+  box-pack:center;
+  border-bottom: 1px solid #999;
+  line-height: 26px;
+}
+.line.title {
+  background: #eee;
+}
+.row {
+  border-right: 1px solid #999;
+  display: -moz-box;  /* Firefox */
+  display: -ms-flexbox;    /* IE10 */
+  display: -webkit-box;    /* Safari */ 
+  display: -webkit-flex;    /* Chrome, WebKit */
+  display: box; 
+  display: flexbox; 
+  display: flex;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+  -moz-box-orient:vertical;
+  -moz-box-direction:normal;
+  flex-direction:column;
+  -webkit-flex-direction:column;
+}
+.row.left {
+  width: 200px;
+  background: #eee;
+  text-align: center;
+}
+
+.row.right {
+  box-flex:1;
+  -webkit-box-flex:1;
+  -moz-box-flex:1;
+  flex:1;
+  -webkit-flex:1;
+}
+.row:last-of-type{
+  border-right: none;
+}
+.row-item{
+  border-bottom: 1px solid #999;
+}
+.row-item:last-of-type{
+  border-bottom: none;
+}
+  </style>
+</head>
+<body>
+  <div class="main">
+    <div class="line title">
+      乙方
+    </div>
+    <div class="line">
+      <div class="row left">
+        <div class="row-item">总计</div>
+      </div>
+      <div class="row right">
+        <div class="row-item">10元</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
